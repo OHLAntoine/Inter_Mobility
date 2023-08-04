@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_3" data-name="Calque 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        font-family: Montserrat-Black, Montserrat;
+        font-size: 38.91px;
+        font-weight: 800;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="cls-3" cx="122.1" cy="270" r="5"/>
+    <path class="cls-3" d="m127.1,225v10h-10c-2.63,9.23-7.1,31.21-12.63,37.76-1.01,1.48-2.7,2.25-4.4,2.24s-3.58-.85-4.67-2.36c-7.1-9.8-5.36-37.6-5.3-37.64-.36,8.06,6.8,39.15,10.77,21.94,0,.04,0,.07,0,.11,2.04-7.95,6.49-24.25,8.55-32.05h17.67Z"/>
+    <path class="cls-3" d="m90.1,225c-2.7,0-4.9,2.14-5,4.82,0,0,0,0,0,0v45.18h-15c2.76,0,5-2.24,5-5v-45h15Z"/>
+  </g>
+  <text class="cls-2" transform="translate(144.88 262.24)"><tspan x="0" y="0">In</tspan><tspan class="cls-5" x="40.93" y="0">t</tspan><tspan class="cls-1" x="58.25" y="0">er Mobili</tspan><tspan class="cls-4" x="241.87" y="0">t</tspan><tspan x="259.38" y="0">y</tspan></text>
+</svg>
