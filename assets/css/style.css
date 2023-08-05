@@ -9,3 +9,46 @@
 button {
     cursor: pointer;
 }
+
+/* Général */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --beige-: rgb(251, 228, 214);
+    --green-: rgb(22, 135, 119);
+    --light_blue-: rgb(51, 117, 138);
+    --dark_blue-: rgb(43, 110, 130);
+}
+
+/* Header */
+
+.menu {
+    height: 4rem;
+    background-color: transparent;
+    flex-wrap: nowrap;
+}
+
+.logo_navbar {
+    height: 15rem;
+}
+
+.nav_links li a {
+    font-weight: bold;
+}
+
+.logo_brand_compressed {
+    width: 10rem;
+    height: 10rem;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: auto;
+    right: 0;
+}
+
+.offcanvas {
+    background-color: var(--beige-);
+}
