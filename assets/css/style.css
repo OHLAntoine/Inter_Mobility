@@ -14,6 +14,11 @@ button {
 
 body {
     font-family: 'Lato', sans-serif;
+    background-image: url("../images/uploads/green-mobility.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
 }
 
 :root {
@@ -27,7 +32,7 @@ body {
 
 .menu {
     height: 4rem;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.5);
     flex-wrap: nowrap;
 }
 
@@ -47,8 +52,35 @@ body {
 .dropdown-menu[data-bs-popper] {
     left: auto;
     right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .offcanvas {
     background-color: var(--beige-);
+}
+
+/* Footer */
+
+.footer_container {
+    background-color: var(--dark_blue-);
+    padding: 1px;
+    z-index: 1;
+}
+
+.logo_brand_footer {
+    height: 3rem;
+    width: 3rem;
+}
+
+.rights_reserved,
+.social_links {
+    color: white;
+}
+
+.rights_reserved {
+    font-size: small;
+}
+
+.social_links {
+    font-size: 1.5rem;
 }
