@@ -14,11 +14,15 @@ button {
 
 body {
     font-family: 'Lato', sans-serif;
+    
+}
+
+.background_image {
     background-image: url("../images/uploads/green-mobility.avif");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-attachment: local;
+    background-position: 60% 80%;
+    background-attachment: fixed;
 }
 
 :root {
@@ -29,6 +33,10 @@ body {
 }
 
 /* Header */
+
+header {
+    z-index: 1;
+}
 
 .menu {
     height: 4rem;
@@ -42,6 +50,7 @@ body {
 
 .nav_links li a {
     font-weight: bold;
+    color: var(--light_blue-);
 }
 
 .logo_brand_compressed {
@@ -52,11 +61,48 @@ body {
 .dropdown-menu[data-bs-popper] {
     left: auto;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dropdown-item:hover {
+    color: var(--dark_blue-);
 }
 
 .offcanvas {
     background-color: var(--beige-);
+}
+
+/* Content */
+
+.home-title {
+    margin-top: 72vh;
+    margin-bottom: 12vh;
+    color: var(--green-);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.words_resume {
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+}
+
+.resume {
+    background-color: var(--beige-);
+}
+
+.resume_title {
+    color: var(--light_blue-);
+}
+
+.contact_button {
+    background-color: var(--green-);
+    color: white;
+}
+
+.contact_button:hover {
+    background-color: var(--dark_blue-);
+    color: white;
 }
 
 /* Footer */
