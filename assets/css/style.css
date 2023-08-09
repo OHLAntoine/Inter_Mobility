@@ -14,7 +14,6 @@ button {
 
 body {
     font-family: 'Lato', sans-serif;
-    
 }
 
 .background_image {
@@ -111,6 +110,19 @@ header {
 
 .actions_section {
     background-color: var(--light_blue-);
+}
+
+/* Experts content */
+
+.experts_section {
+    background-color: var(--beige-);
+}
+
+.experts_photo {
+    background-image: url(../images/uploads/conference.avif);
+    background-attachment: fixed;
+    background-position: right bottom;
+    height: 30rem;
 }
 
 /* Footer */
