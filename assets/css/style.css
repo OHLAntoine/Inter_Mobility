@@ -32,6 +32,16 @@ body {
     --dark_blue-: rgb(43, 110, 130);
 }
 
+.links_button {
+    background-color: var(--green-);
+    color: white;
+}
+
+.links_button:hover {
+    background-color: var(--dark_blue-);
+    color: white;
+}
+
 /* Header */
 
 header {
@@ -72,7 +82,7 @@ header {
     background-color: var(--beige-);
 }
 
-/* Content */
+/* Home content */
 
 .home-title {
     margin-top: 72vh;
@@ -80,6 +90,8 @@ header {
     color: var(--green-);
     background-color: rgba(255, 255, 255, 0.4);
 }
+
+/* Resume Content */
 
 .words_resume {
     font-weight: bold;
@@ -95,14 +107,10 @@ header {
     color: var(--light_blue-);
 }
 
-.contact_button {
-    background-color: var(--green-);
-    color: white;
-}
+/* Actions content */
 
-.contact_button:hover {
-    background-color: var(--dark_blue-);
-    color: white;
+.actions_section {
+    background-color: var(--light_blue-);
 }
 
 /* Footer */
