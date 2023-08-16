@@ -90,13 +90,15 @@ header {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Resume Content */
-
 .words_resume {
     font-weight: bold;
     font-size: 3rem;
     letter-spacing: .2rem;
+    opacity: 0;
+    transition: all 1s ease-in;
 }
+
+/* Resume Content */
 
 .resume {
     background-color: var(--beige-);
@@ -104,6 +106,11 @@ header {
 
 .resume_title {
     color: var(--light_blue-);
+}
+
+.test{
+    opacity: 0;
+    transition: all 1s ease-in;
 }
 
 /* Actions content */
@@ -186,4 +193,10 @@ header {
 
 .social_links {
     font-size: 1.5rem;
+}
+
+/* Content visibility */
+
+.loaded {
+    opacity: 1;
 }
