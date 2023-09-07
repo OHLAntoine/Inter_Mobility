@@ -17,10 +17,9 @@ body {
 }
 
 .background_image {
-    background-image: url("../images/uploads/green-mobility.avif");
+    background-image: url("../images/01_Images/03_Website/im0.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 60% 80%;
     background-attachment: fixed;
 }
 
@@ -29,6 +28,7 @@ body {
     --green-: rgb(22, 135, 119);
     --light_blue-: rgb(51, 117, 138);
     --dark_blue-: rgb(43, 110, 130);
+    --light_white-: rgba(255, 255, 255, 0.5);
 }
 
 .links_button {
@@ -54,7 +54,7 @@ header {
 
 .menu {
     height: 4rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--light_white-);
     flex-wrap: nowrap;
 }
 
@@ -71,31 +71,47 @@ header {
     height: 10rem;
 }
 
+.dropdown-menu {
+    left: auto;
+    right: 0;
+    background-color: var(--light_white-);
+}
+
 .dropdown-menu[data-bs-popper] {
     left: auto;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--light_white-);
 }
 
 .dropdown-item:hover {
-    color: var(--dark_blue-);
+    color: black;
 }
 
 .offcanvas {
     background-color: var(--beige-);
 }
 
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
 /* Home content */
 
 .home-title {
     margin-top: 72vh;
-    margin-bottom: 12vh;
-    background-color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 15vh;
+    background-color: var(--light_white-);
 }
 
 .words_resume {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: .2rem;
     opacity: 0;
     transition: all 1s ease-in;
@@ -111,6 +127,22 @@ header {
 
 .actions_section {
     background-color: var(--light_blue-);
+}
+
+.actions_images {
+    width: 15Opx;
+    height: 500px;
+    margin-bottom: 40px;
+}
+
+.actions_images_titles {
+    background-color: var(--light_white-);
+    font-weight: bold;
+}
+
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+    filter: invert(100%);
 }
 
 @media (max-width: 991px) {
@@ -178,7 +210,7 @@ header {
 
 .rights_reserved,
 .social_links {
-    color: white;
+    color: black;
 }
 
 .rights_reserved {

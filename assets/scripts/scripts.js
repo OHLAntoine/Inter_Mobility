@@ -1,3 +1,4 @@
+// Apparition des textes
 const wordsResume = document.querySelector('.words_resume');
 
 window.addEventListener("load", (event) => {
@@ -40,3 +41,15 @@ function scrolling() {
         }
     }
 }
+
+// Multi level dropdown
+let doubleDropdown = document.querySelector('.dropdown_double');
+let teamDropdown = document.querySelector('.team_dropdown');
+let expertsDropdown = document.querySelector('.experts_dropdown');
+let submenus = [teamDropdown, expertsDropdown];
+
+submenus.forEach(element => {
+    element.addEventListener('click', function(e) {
+        doubleDropdown.style.display = doubleDropdown.style.display==='block'?'':'block'
+    })
+});
