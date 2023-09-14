@@ -17,7 +17,7 @@ body {
 }
 
 .background_image {
-    background-image: url("../images/01_Images/03_Website/im0.jpg");
+    background-image: url("../images/01_Images/03_Website/depositphotos-49549871-xl-2015_res_1600x900.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -105,7 +105,7 @@ header {
 
 .home-title {
     margin-top: 72vh;
-    margin-bottom: 15vh;
+    margin-bottom: 14vh;
     background-color: var(--light_white-);
 }
 

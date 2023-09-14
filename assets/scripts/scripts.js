@@ -24,10 +24,10 @@ function scrolling() {
         if (document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300) {
             support.classList.add('loaded');
         }
-        if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
+        if (document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700) {
             experts.classList.add('loaded');
         }
-        if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
+        if (document.body.scrollTop > 2100 || document.documentElement.scrollTop > 2100) {
             partners.classList.add('loaded');
         }
     } else {
@@ -51,12 +51,8 @@ function scrolling() {
 
 // Multi level dropdown
 let doubleDropdown = document.querySelector('.dropdown_double');
-let teamDropdown = document.querySelector('.team_dropdown');
 let expertsDropdown = document.querySelector('.experts_dropdown');
-let submenus = [teamDropdown, expertsDropdown];
 
-submenus.forEach(element => {
-    element.addEventListener('click', function(e) {
-        doubleDropdown.style.display = doubleDropdown.style.display==='block'?'':'block'
-    })
+expertsDropdown.addEventListener('click', function(e) {
+    doubleDropdown.style.display = doubleDropdown.style.display==='block'?'':'block'
 });
