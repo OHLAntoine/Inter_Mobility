@@ -114,7 +114,7 @@ header {
     font-size: 2rem;
     letter-spacing: .2rem;
     opacity: 0;
-    transition: all 1s ease-in;
+    transition: all 2s ease-in;
 }
 
 /* Resume Content */
@@ -162,9 +162,9 @@ header {
 }
 
 .experts_photo {
-    background-image: url(../images/uploads/conference.avif);
+    background-image: url(../images/01_Images/02_People/22007864_10155214860752672_4616207923189533786_n.jpg);
     background-attachment: fixed;
-    background-position: bottom 0% left 130%;
+    background-repeat: no-repeat;
     height: 30rem;
 }
 
@@ -193,6 +193,16 @@ header {
         justify-content: center;
         margin-bottom: 3rem;
     }
+}
+
+/* Support content */
+
+.support_section {
+    background-color: var(--dark_blue-);
+}
+
+.support_presentation {
+    background-color: var(--light_blue-);
 }
 
 /* Footer */

@@ -8,6 +8,7 @@ window.addEventListener("load", (event) => {
 const resume = document.querySelector('.resume_content');
 const actions = document.querySelector('.actions_content');
 const experts = document.querySelector('.experts_content');
+const support = document.querySelector('.support_content');
 const partners = document.querySelector('.partners_content');
 
 window.onscroll = function() {scrolling()};
@@ -21,9 +22,12 @@ function scrolling() {
             actions.classList.add('loaded');
         }
         if (document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300) {
-            experts.classList.add('loaded');
+            support.classList.add('loaded');
         }
         if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
+            experts.classList.add('loaded');
+        }
+        if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
             partners.classList.add('loaded');
         }
     } else {
@@ -34,9 +38,12 @@ function scrolling() {
             actions.classList.add('loaded');
         }
         if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
-            experts.classList.add('loaded');
+            support.classList.add('loaded');
         }
         if (document.body.scrollTop > 2400 || document.documentElement.scrollTop > 2400) {
+            experts.classList.add('loaded');
+        }
+        if (document.body.scrollTop > 3000 || document.documentElement.scrollTop > 3000) {
             partners.classList.add('loaded');
         }
     }
