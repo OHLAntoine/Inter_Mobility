@@ -114,7 +114,7 @@ header {
     font-size: 2rem;
     letter-spacing: .2rem;
     opacity: 0;
-    transition: all 2s ease-in;
+    transition: all 1.5s ease-in;
 }
 
 /* Resume Content */
