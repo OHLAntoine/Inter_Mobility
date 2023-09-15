@@ -46,6 +46,12 @@ body {
     transition: all 1s ease-in;
 }
 
+.line {
+    width: 50%;
+    border: solid 1px var(--light_blue-);
+    position: relative;
+}
+
 /* Header */
 
 header {
@@ -101,6 +107,34 @@ header {
     margin-top: -1px;
 }
 
+/* Footer */
+
+.footer_container {
+    background-color: var(--dark_blue-);
+    padding: 1px;
+    z-index: 1;
+}
+
+.logo_brand_footer {
+    height: 3rem;
+    width: 3rem;
+}
+
+.rights_reserved,
+.social_links {
+    color: black;
+}
+
+.rights_reserved {
+    font-size: small;
+}
+
+.social_links {
+    font-size: 1.5rem;
+}
+
+/* HOME PAGE */
+
 /* Home content */
 
 .home-title {
@@ -130,7 +164,6 @@ header {
 }
 
 .actions_images {
-    width: 15Opx;
     height: 500px;
     margin-bottom: 40px;
 }
@@ -205,30 +238,21 @@ header {
     background-color: var(--light_blue-);
 }
 
-/* Footer */
+/* FOUNDING TEAM PAGE */
 
-.footer_container {
-    background-color: var(--dark_blue-);
-    padding: 1px;
-    z-index: 1;
+.team_section {
+    background-color: var(--beige-);
 }
 
-.logo_brand_footer {
-    height: 3rem;
-    width: 3rem;
+.team_pictures {
+    min-width: 16rem;
+    width: 25%;
+    height: 25%;
+    margin-right: 2rem;
 }
 
-.rights_reserved,
-.social_links {
-    color: black;
-}
-
-.rights_reserved {
-    font-size: small;
-}
-
-.social_links {
-    font-size: 1.5rem;
+.team_description {
+    text-align: justify;
 }
 
 /* Content visibility */
