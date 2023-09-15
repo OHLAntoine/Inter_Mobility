@@ -46,9 +46,15 @@ body {
     transition: all 1s ease-in;
 }
 
-.line {
+.line_team {
     width: 50%;
     border: solid 1px var(--light_blue-);
+    position: relative;
+}
+
+.line_experts {
+    width: 50%;
+    border: solid 1px var(--beige-);
     position: relative;
 }
 
@@ -204,7 +210,7 @@ header {
 @media (max-width: 991px) {
     .experts_photo {
         width: 100%;
-        background-position: bottom right;
+        background-position: center;
     }
 
     .resume_experts {
@@ -253,6 +259,35 @@ header {
 
 .team_description {
     text-align: justify;
+}
+
+/* EXPERTS PAGE */
+
+.experts_page {
+    background-color: var(--light_blue-);
+}
+
+.experts_pictures {
+    min-width: 16rem;
+    width: 25%;
+    height: 25%;
+    margin-right: 2rem;
+}
+
+.experts_description {
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .experts_presentation {
+        flex-direction: column;
+    }
+    .experts_resume {
+        margin-top: 1rem;
+    }
+    .experts_title {
+        text-align: center;
+    }
 }
 
 /* Content visibility */
