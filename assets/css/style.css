@@ -261,6 +261,18 @@ header {
     text-align: justify;
 }
 
+@media (max-width: 768px) {
+    .team_presentation {
+        flex-direction: column;
+    }
+    .team_resume {
+        margin-top: 1rem;
+    }
+    .team_title {
+        text-align: center;
+    }
+}
+
 /* EXPERTS PAGE */
 
 .experts_page {
@@ -276,18 +288,6 @@ header {
 
 .experts_description {
     text-align: justify;
-}
-
-@media (max-width: 768px) {
-    .experts_presentation {
-        flex-direction: column;
-    }
-    .experts_resume {
-        margin-top: 1rem;
-    }
-    .experts_title {
-        text-align: center;
-    }
 }
 
 /* Content visibility */
