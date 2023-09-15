@@ -48,11 +48,3 @@ function scrolling() {
         }
     }
 }
-
-// Multi level dropdown
-let doubleDropdown = document.querySelector('.dropdown_double');
-let expertsDropdown = document.querySelector('.experts_dropdown');
-
-expertsDropdown.addEventListener('click', function(e) {
-    doubleDropdown.style.display = doubleDropdown.style.display==='block'?'':'block'
-});
