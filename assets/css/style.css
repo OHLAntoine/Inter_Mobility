@@ -290,6 +290,24 @@ header {
     text-align: justify;
 }
 
+/* HELPING PAGE */
+
+.helping_section {
+    background-color: var(--beige-);
+}
+
+.support_call_section {
+    background-color: var(--beige-);
+}
+
+.consulting_project_section {
+    background-color: var(--light_blue-);
+}
+
+.dedicated_event_section {
+    background-color: var(--beige-);
+}
+
 /* Content visibility */
 
 .loaded {
