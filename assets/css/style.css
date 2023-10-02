@@ -217,6 +217,7 @@ header {
 @media (max-width: 575px) {
     .experts_photo {
         background-attachment: local;
+        background-position: center top;
     }
 }
 
