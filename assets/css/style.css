@@ -214,13 +214,6 @@ header {
     height: 30rem;
 }
 
-@media (max-width: 575px) {
-    .experts_photo {
-        background-attachment: local;
-        background-position: center top;
-    }
-}
-
 @media (max-width: 991px) {
     .experts_photo {
         width: 100%;
@@ -229,6 +222,13 @@ header {
 
     .resume_experts {
         text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .experts_photo {
+        background-attachment: local;
+        background-position: center top;
     }
 }
 
