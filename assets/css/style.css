@@ -35,10 +35,11 @@ body {
 }
 
 :root {
-    --beige-: rgb(251, 228, 214);
+    --white-: rgba(255, 255, 255, 1);
+    /* --white-: rgb(251, 228, 214); */
     --green-: rgb(22, 135, 119);
     --light_blue-: rgb(51, 117, 138);
-    --dark_blue-: rgb(43, 110, 130);
+    /* --light_blue-: rgb(43, 110, 130); */
     --light_white-: rgba(255, 255, 255, 0.5);
 }
 
@@ -48,7 +49,7 @@ body {
 }
 
 .links_button:hover {
-    background-color: var(--dark_blue-);
+    background-color: var(--light_blue-);
     color: white;
 }
 
@@ -65,7 +66,7 @@ body {
 
 .line_experts {
     width: 50%;
-    border: solid 1px var(--beige-);
+    border: solid 1px var(--white-);
     position: relative;
 }
 
@@ -111,7 +112,7 @@ header {
 }
 
 .offcanvas {
-    background-color: var(--beige-);
+    background-color: var(--white-);
 }
 
 .dropdown-submenu {
@@ -127,7 +128,7 @@ header {
 /* Footer */
 
 .footer_container {
-    background-color: var(--dark_blue-);
+    background-color: var(--light_blue-);
     padding: 1px;
     z-index: 1;
 }
@@ -171,7 +172,7 @@ header {
 /* Resume Content */
 
 .resume {
-    background-color: var(--beige-);
+    background-color: var(--white-);
 }
 
 /* Actions content */
@@ -183,6 +184,7 @@ header {
 .actions_images {
     height: 500px;
     margin-bottom: 40px;
+    object-fit: cover;
 }
 
 .actions_images_titles {
@@ -193,6 +195,8 @@ header {
 .carousel-control-next-icon, 
 .carousel-control-prev-icon {
     filter: invert(100%);
+    background-color: rgba(0,0,0, 1);
+    border-radius: 25%;
 }
 
 @media (max-width: 991px) {
@@ -208,7 +212,7 @@ header {
 /* Experts content */
 
 .experts_section {
-    background-color: var(--beige-);
+    background-color: var(--light_blue-);
 }
 
 .experts_photo {
@@ -255,17 +259,17 @@ header {
 /* Support content */
 
 .support_section {
-    background-color: var(--dark_blue-);
+    background-color: var(--white-);
 }
 
 .support_presentation {
-    background-color: var(--light_blue-);
+    background-color: var(--white-);
 }
 
 /* FOUNDING TEAM PAGE */
 
 .team_section {
-    background-color: var(--beige-);
+    background-color: var(--white-);
 }
 
 .team_pictures {
@@ -311,11 +315,11 @@ header {
 /* HELPING PAGE */
 
 .helping_section {
-    background-color: var(--beige-);
+    background-color: var(--white-);
 }
 
 .support_call_section {
-    background-color: var(--beige-);
+    background-color: var(--white-);
 }
 
 .consulting_project_section {
@@ -323,7 +327,7 @@ header {
 }
 
 .dedicated_event_section {
-    background-color: var(--beige-);
+    background-color: var(--white-);
 }
 
 /* Content visibility */
