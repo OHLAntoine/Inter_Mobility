@@ -35,11 +35,11 @@ body {
 }
 
 :root {
-    --white-: rgba(255, 255, 255, 1);
-    /* --white-: rgb(251, 228, 214); */
+    /* --beige-: rgb(251, 228, 214); */
+    --ecru-: rgba(235, 232, 224, 1);
     --green-: rgb(22, 135, 119);
     --light_blue-: rgb(51, 117, 138);
-    /* --light_blue-: rgb(43, 110, 130); */
+    --dark_blue-: rgb(43, 110, 130);
     --light_white-: rgba(255, 255, 255, 0.5);
 }
 
@@ -49,25 +49,13 @@ body {
 }
 
 .links_button:hover {
-    background-color: var(--light_blue-);
+    background-color: var(--dark_blue-);
     color: white;
 }
 
 .hidden_content{
     opacity: 0;
     transition: all 1s ease-in;
-}
-
-.line_team {
-    width: 50%;
-    border: solid 1px var(--light_blue-);
-    position: relative;
-}
-
-.line_experts {
-    width: 50%;
-    border: solid 1px var(--white-);
-    position: relative;
 }
 
 /* Header */
@@ -112,7 +100,7 @@ header {
 }
 
 .offcanvas {
-    background-color: var(--white-);
+    background-color: var(--ecru-);
 }
 
 .dropdown-submenu {
@@ -172,7 +160,7 @@ header {
 /* Resume Content */
 
 .resume {
-    background-color: var(--white-);
+    background-color: var(--ecru-);
 }
 
 /* Actions content */
@@ -209,6 +197,23 @@ header {
     }
 }
 
+/* Support content */
+
+.support_section {
+    background-color: var(--ecru-);
+}
+
+.support_presentation {
+    background-color: var(--ecru-);
+}
+
+@media (max-width: 991px) {
+    .support_content {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 /* Experts content */
 
 .experts_section {
@@ -216,16 +221,18 @@ header {
 }
 
 .experts_photo {
-    background-image: url(../images/01_Images/02_People/22007864_10155214860752672_4616207923189533786_n.jpg);
+    background-image: url(../images/01_Images/02_People/fh3.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: contain;
     height: 30rem;
 }
 
 @media (max-width: 991px) {
     .experts_photo {
         width: 100%;
-        background-position: center;
+        background-attachment: local;
+        background-position: center top;
     }
 
     .resume_experts {
@@ -233,17 +240,10 @@ header {
     }
 }
 
-@media (max-width: 575px) {
-    .experts_photo {
-        background-attachment: local;
-        background-position: center top;
-    }
-}
-
 /* Partners content */
 
 .partners_section {
-    background-color: white;
+    background-color: var(--ecru-);
 }
 
 @media (max-width: 991px) {
@@ -256,20 +256,19 @@ header {
     }
 }
 
-/* Support content */
-
-.support_section {
-    background-color: var(--white-);
-}
-
-.support_presentation {
-    background-color: var(--white-);
-}
-
 /* FOUNDING TEAM PAGE */
 
-.team_section {
-    background-color: var(--white-);
+.team_section,
+.tamy_section,
+.lukas_section,
+.augustin_section {
+    background-color: var(--light_blue-);
+}
+
+.kenneth_section,
+.ramu_section,
+.francois_section {
+    background-color: var(--ecru-);
 }
 
 .team_pictures {
@@ -287,8 +286,13 @@ header {
     .team_presentation {
         flex-direction: column;
     }
+    .team_pictures {
+        margin-right: 0;
+    }
     .team_resume {
         margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .team_title {
         text-align: center;
@@ -297,7 +301,13 @@ header {
 
 /* EXPERTS PAGE */
 
-.experts_page {
+.experts_page,
+.gender_section,
+.future_section {
+    background-color: var(--ecru-);
+}
+
+.sustain_section {
     background-color: var(--light_blue-);
 }
 
@@ -312,14 +322,30 @@ header {
     text-align: justify;
 }
 
+@media (max-width: 768px) {
+    .experts_presentation {
+        flex-direction: column;
+    }
+    .experts_pictures {
+        margin-right: 0;
+    }
+    .experts_explications {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .experts_description {
+        text-align: center;
+    }
+}
+
 /* HELPING PAGE */
 
 .helping_section {
-    background-color: var(--white-);
+    background-color: var(--ecru-);
 }
 
 .support_call_section {
-    background-color: var(--white-);
+    background-color: var(--ecru-);
 }
 
 .consulting_project_section {
@@ -327,7 +353,7 @@ header {
 }
 
 .dedicated_event_section {
-    background-color: var(--white-);
+    background-color: var(--ecru-);
 }
 
 /* Content visibility */
