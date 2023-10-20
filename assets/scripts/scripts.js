@@ -1,4 +1,4 @@
-// Apparition des textes
+// Apparition des textes accueil
 const wordsResume = document.querySelector('.words_resume');
 
 window.addEventListener("load", (event) => {
