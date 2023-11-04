@@ -163,6 +163,13 @@ header {
     background-color: var(--ecru-);
 }
 
+.slack_link {
+    color: var(--light_blue-);
+}
+.slack_link:hover {
+    color: var(--dark_blue-);
+}
+
 /* Actions content */
 
 .actions_section {
@@ -258,7 +265,10 @@ header {
 
 /* FOUNDING TEAM PAGE */
 
-.team_section,
+.team_section {
+    background-color: var(--ecru-);
+}
+
 .tamy_section,
 .lukas_section,
 .augustin_section {
