@@ -1,3 +1,23 @@
+// Menu disabled after link clicked
+const menu = document.querySelector('.offcanvas_menu');
+const links = document.querySelectorAll('.sections_links');
+const closeMenu = document.querySelector('.btn-close')
+
+links.forEach(link => {
+    link.addEventListener('click', (event) => {
+        if (menu.classList.contains('show')) {
+                event.preventDefault();
+                closeMenu.click();
+                if (link.getAttribute('href') === '#actions') {
+                    window.scrollTo(0, 4200);
+                } else {
+                    window.scrollTo(0, 8000);
+                }
+        }
+    })
+});
+
+
 // Apparition des textes accueil
 const wordsResume = document.querySelector('.words_resume');
 
