@@ -103,14 +103,10 @@ header {
     background-color: var(--ecru-);
 }
 
-.dropdown-submenu {
-    position: relative;
-}
-
-.dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -1px;
+@media (max-width: 1200px) {
+    .long_link {
+        white-space: inherit;
+    }
 }
 
 /* Footer */
@@ -364,6 +360,41 @@ header {
 
 .dedicated_event_section {
     background-color: var(--ecru-);
+}
+
+/* Articles Pages */
+
+.article_section {
+    background-color: var(--ecru-);
+}
+
+.article_description {
+    text-align: justify;
+}
+
+.article_picture {
+    width: 60%;
+    float: right;
+    padding-left: 1rem;
+}
+
+@media (max-width: 991px) {
+    .article_picture {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .article_resume {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .article_title {
+        text-align: center;
+    }
 }
 
 /* Content visibility */
