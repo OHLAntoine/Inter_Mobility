@@ -126,6 +126,9 @@ header {
 .social_links {
     color: black;
 }
+.social_links:hover {
+    color: white;
+}
 
 .rights_reserved {
     font-size: small;
@@ -140,17 +143,12 @@ header {
 /* Home content */
 
 .home-title {
-    margin-top: 72vh;
-    margin-bottom: 14vh;
-    background-color: var(--light_white-);
+    margin-top: 62vh;
+    margin-bottom: 4vh;
 }
 
-.words_resume {
-    font-weight: bold;
-    font-size: 2rem;
-    letter-spacing: .2rem;
-    opacity: 0;
-    transition: all 1.5s ease-in;
+.banner {
+    width: 100%;
 }
 
 /* Resume Content */
@@ -231,6 +229,16 @@ header {
     height: 30rem;
 }
 
+.gender_link_picture {
+    width: 75%;
+}
+
+.gender_pictures {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5rem;
+}
+
 @media (max-width: 991px) {
     .experts_photo {
         width: 100%;
@@ -267,21 +275,23 @@ header {
 
 .tamy_section,
 .lukas_section,
-.augustin_section {
+.francois_section,
+.dagmara_section {
     background-color: var(--light_blue-);
 }
 
 .kenneth_section,
 .ramu_section,
-.francois_section {
+.scott_section {
     background-color: var(--ecru-);
 }
 
 .team_pictures {
-    min-width: 16rem;
-    width: 25%;
-    height: 25%;
+    width: 235px;
+    height: 235px;
     margin-right: 2rem;
+    object-fit: cover;
+    border: 2px solid black;
 }
 
 .team_description {
@@ -318,10 +328,9 @@ header {
 }
 
 .experts_pictures {
-    min-width: 16rem;
-    width: 25%;
+    width: 75%;
     height: 25%;
-    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 
 .experts_description {
@@ -329,9 +338,6 @@ header {
 }
 
 @media (max-width: 768px) {
-    .experts_presentation {
-        flex-direction: column;
-    }
     .experts_pictures {
         margin-right: 0;
     }

@@ -34,7 +34,7 @@ navbarToggler.addEventListener('click', (event)=> {
     })
 })
 
-if (window.location.pathname == '/articles/GenderEquality.html' || window.location.pathname == '/articles/MobilityHUB.html' || window.location.pathname == '/articles/USPNetwork.html' || window.location.pathname == '/articles/YouthDecarbonizationTech.html') {
+if (window.location.pathname == '/articles/GenderEquality.html' || window.location.pathname == '/articles/CitiesFirst.html' || window.location.pathname == '/articles/MobilityHUB.html' || window.location.pathname == '/articles/USPNetwork.html' || window.location.pathname == '/articles/YouthDecarbonizationTech.html') {
     dropdownsToggle.forEach(dropdownToggle => {
         dropdownToggle.addEventListener('click', (event)=> {
             dropdownsMenu.forEach(dropdownMenu => {
