@@ -17,46 +17,6 @@ links.forEach(link => {
     })
 });
 
-// Backgroundcolor dropdowns
-const dropdownsToggle = document.querySelectorAll('.dropdown-toggle');
-const dropdownsMenu = document.querySelectorAll('.dropdown-menu');
-const navbarToggler = document.querySelector('.navbar-toggler');
-
-navbarToggler.addEventListener('click', (event)=> {
-    dropdownsToggle.forEach(dropdownToggle => {
-        dropdownToggle.addEventListener('click', (event)=> {
-            dropdownsMenu.forEach(dropdownMenu => {
-                if (dropdownMenu.classList.contains('show')) {
-                    dropdownMenu.style.backgroundColor = 'var(--ecru-)';
-                }
-            });
-        })
-    })
-})
-
-if (window.location.pathname == '/articles/GenderEquality.html' || window.location.pathname == '/articles/CitiesFirst.html' || window.location.pathname == '/articles/MobilityHUB.html' || window.location.pathname == '/articles/USPNetwork.html' || window.location.pathname == '/articles/YouthDecarbonizationTech.html') {
-    dropdownsToggle.forEach(dropdownToggle => {
-        dropdownToggle.addEventListener('click', (event)=> {
-            dropdownsMenu.forEach(dropdownMenu => {
-                if (dropdownMenu.classList.contains('show')) {
-                    dropdownMenu.style.backgroundColor = 'var(--ecru-)';
-                }
-            });
-        })
-    })
-} else if (window.location.pathname == '/FoundingTeam.html') {
-    dropdownsToggle.forEach(dropdownToggle => {
-        dropdownToggle.addEventListener('click', (event)=> {
-            dropdownsMenu.forEach(dropdownMenu => {
-                if (dropdownMenu.classList.contains('show')) {
-                    dropdownMenu.style.backgroundColor = 'var(--dark_blue-)';
-                }
-            });
-        })
-    })
-}
-
-
 // Show content on scroll
 const wordsResume = document.querySelector('.words_resume');
 

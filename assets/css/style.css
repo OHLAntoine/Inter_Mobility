@@ -41,21 +41,26 @@ body {
     --light_blue-: rgb(51, 117, 138);
     --dark_blue-: rgb(43, 110, 130);
     --light_white-: rgba(255, 255, 255, 0.5);
+    --header_color-: rgba(0, 74, 173, 1);
 }
 
 .links_button {
-    background-color: var(--green-);
+    background-color: var(--header_color-);
     color: white;
 }
 
 .links_button:hover {
-    background-color: var(--dark_blue-);
+    background-color: var(--green-);
     color: white;
 }
 
 .hidden_content{
     opacity: 0;
     transition: all 1s ease-in;
+}
+
+.download_report {
+    background-color: pink;
 }
 
 /* Header */
@@ -66,16 +71,17 @@ header {
 
 .menu {
     height: 4rem;
-    background-color: var(--light_white-);
+    background-color: var(--header_color-);
     flex-wrap: nowrap;
 }
 
 .logo_navbar {
-    height: 15rem;
+    height: 4rem;
 }
 
 .nav_links li a {
     font-weight: bold;
+    color: white;
 }
 
 .logo_brand_compressed {
@@ -86,13 +92,13 @@ header {
 .dropdown-menu {
     left: auto;
     right: 0;
-    background-color: var(--light_white-);
+    background-color: var(--header_color-);
 }
 
 .dropdown-menu[data-bs-popper] {
     left: auto;
     right: 0;
-    background-color: var(--light_white-);
+    background-color: var(--header_color-);
 }
 
 .dropdown-item:hover {
@@ -100,7 +106,7 @@ header {
 }
 
 .offcanvas {
-    background-color: var(--ecru-);
+    background-color: var(--header_color-);
 }
 
 @media (max-width: 1200px) {
